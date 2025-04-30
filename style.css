@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #200d57
+    background-size: 400% 400%;
+    animation: animarGradiente 15s ease infinite;
+    color: #0a1a25;
+  }
+  
+  header {
+    background:linear-gradient(45deg,#c5b7b7,#1d1909,#1e094d) 
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: rgb(77, 18, 18);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #115869;
+  }
+  
+  main {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+  }
+  
+  .formulario input,
+  .formulario textarea {
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #101314;
+    resize: none;
+    outline: none;
+  }
+  
+  .botao-gradiente {
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(211, 195, 195);
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(-45deg, #010d14, #0a5739, #691318, #0c5aa3);
+    background-size: 300% 300%;
+    animation: gradienteAnimado 6s ease infinite;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .botao-gradiente:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes gradienteAnimado {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+   
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background: linear-gradient(to right, #fff0f5, #ffffff);
+    gap: 50px;
+  }
+  
+  .hero-texto {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .hero-texto h1 {
+    font-size: 48px;
+    color: #f7e1e4;
+    margin-bottom: 20px;
+  }
+  
+  .hero-texto p {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  
+  .hero-imagem {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-imagem img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .hero-imagem img {
+      max-width: 50%;
+    }
+  }
+ 
+  .imagem-fundo {
+    background-color: #0e3b49; /* cor suave, elegante */
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 15px 30px rgba(82, 27, 27, 0.1);
+    transition: transform 0.4s ease;
+  }
+  
+  .imagem-fundo:hover {
+    transform: scale(1.08); /* efeito de leve zoom ao passar o mouse */
+  }
+  
+  /* Estilo da imagem */
+  .imagem-fundo img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .fundo-animado {
+    animation: animarFundo 15s ease infinite;
+    background: linear-gradient(-45deg, #121312, #013009a4, #1c60b9b6, #1d0736);
+    background-size: 400% 400%;
+    border-radius: 25px;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.712);
+  }
+   
+  @keyframes animarFundo {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .botao {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: rgb(70, 33, 33);
+    background: linear-gradient(135deg, #0e0b0c, #141335);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(151, 69, 69, 0.2);
+    animation: pulsar 2.5s infinite ease-in-out;
+  }
+  
+  .botao:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Animação que pulsa o botão */
+  @keyframes pulsar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #fff1eb, #ace0f9);
+  }
+  
+  .produto-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .produto-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .produto-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .produto-card h3 {
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .produto-card p {
+    color: #008000;
+    font-weight: bold;
+  }
+  
+  .botao {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .botao:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+  }
+  
+    
+  
+  
+  
+  
